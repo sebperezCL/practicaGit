@@ -1,0 +1,34 @@
+- **¿Qué comando utilizaste en el paso 11? ¿Por qué?**
+  - Utilicé el comando:
+    - `git reset --hard HEAD~1`
+  - De esta forma puedo volver al commit inmediatamente anterior y restaurar los archivos en el working copy.
+- **¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué?**
+  - Para ver todos los commits realizados:
+    - `git reflog`
+  - Luego, para volver al commit original utilizo el hash correspondiente, de la siguiente forma:
+    - `git reset --hard 05250dd`
+- **El merge del paso 13, ¿Causó algún conflicto? ¿Por qué?**
+  - No, ya que los commits de master ya estaban en la rama styled
+- **El merge del paso 19, ¿Causó algún conflicto? ¿Por qué?**
+  - Si, ambas ramas tenían modificaciones sobre el archivo en las mismas líneas
+- **El merge del paso 21, ¿Causó algún conflicto? ¿Por qué?**
+  - No, se pudo hacer un merge fastforward ya que no se ha modificado nada en master
+- **¿Qué comando o comandos utilizaste en el paso 25?**
+  - `git log --graph`
+- **El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?**
+  - Si, porque title contiene todos los commits de master
+- **¿Qué comando o comandos utilizaste en el paso 27?**
+  - `git reset HEAD~1`
+- **¿Qué comando o comandos utilizaste en el paso 28?**
+  - `git checkout -- git-nuestro.md`
+- **¿Qué comando o comandos utilizaste en el paso 29?**
+  - `git branch -D title`
+- **¿Qué comando o comandos utilizaste en el paso 30?**
+  - Para ver todos los commits realizados:
+    - `git reflog`
+  - Luego, para volver al commit del merge con 'title' uso el hash correspondiente, de la siguiente forma:
+    - `git reset --hard 5c95f12`
+- **¿Qué comando o comandos usaste en el paso 32?**
+  - Primero uso `git log` y luego `git reset --hard facac14`
+- **¿Qué comando o comandos usaste en el punto 33?**
+  - Primero uso `git reflog` para ver el historial de commits y luego `git reset --hard 5c95f12`
